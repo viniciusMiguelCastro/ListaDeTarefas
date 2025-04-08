@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>{{ tarefa.id ? 'Editar Tarefa' : 'Adicionar Tarefa' }}</h2>
+    <form (ngSubmit)="salvar()">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" [(ngModel)]="tarefa.titulo" name="titulo" required />
+  
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" [(ngModel)]="tarefa.descricao" name="descricao"></textarea>
+  
+      <label for="concluido">Concluído</label>
+      <input type="checkbox" [(ngModel)]="tarefa.concluido" name="concluido" />
+  
+      <button type="submit">{{ tarefa.id ? 'Atualizar' : 'Salvar' }}</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jhBozB8By6evh5syLLLtOkhtjFQNH0b7I1YCPZWFSG8=",
+  "Source": "CrudOracleApi",
+  "BasePath": "_content/CrudOracleApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

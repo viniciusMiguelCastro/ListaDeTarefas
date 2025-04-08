@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Lista de Tarefas</h2>
+    <ul>
+      <li *ngFor="let tarefa of tarefas">
+        {{ tarefa.titulo }} - {{ tarefa.descricao }}
+        <input type="checkbox" [checked]="tarefa.concluido" disabled />
+        <button *ngIf="tarefa.id !== undefined" (click)="deletarTarefa(tarefa.id)">Deletar</button>
+        <button *ngIf="tarefa.id !== undefined" (click)="editarTarefa(tarefa.id)">Editar</button>
+      </li>
+    </ul>
+  </div>
+  
